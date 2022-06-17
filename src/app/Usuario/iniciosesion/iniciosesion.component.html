@@ -1,0 +1,18 @@
+<h2>Ingrese su rut</h2>
+<br>
+<form [formGroup]="formu">
+    <div>
+        <ul>
+            <li>
+                <label>Rut</label>
+                <br>
+                <input formControlName="rut" type="text" placeholder="Ingrese...">
+            </li>
+            <br>
+            <br>
+            <li>
+                <button (click)="ingresar()">Ingresar</button>
+            </li>
+        </ul>
+    </div>
+</form>

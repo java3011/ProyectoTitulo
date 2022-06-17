@@ -1,0 +1,36 @@
+<h2>
+    Formulario de registro</h2>
+<br>
+<form [formGroup]="formula">
+    <div>
+        <ul>
+            <li>
+                <label>Nombre</label>
+                <br>
+                <input formControlName="nombre" type="text" placeholder="Ingrese...">
+            </li>
+            <br>
+            <li>
+                <label>Apellido Paterno</label>
+                <br>
+                <input formControlName="apellidopa" type="text" placeholder="Ingrese...">
+            </li>
+            <br>
+            <li>
+                <label>Apellido Materno</label>
+                <br>
+                <input formControlName="apellidoma" type="text" placeholder="Ingrese...">
+            </li>
+            <br>
+            <li>
+                <label>Rut</label>
+                <br>
+                <input formControlName="rut" type="text" placeholder="Ingrese...">
+            </li>
+            <br>
+            <li>
+                <button (click)="guardar()">Registrarse</button>
+            </li>
+        </ul>
+    </div>
+</form>
