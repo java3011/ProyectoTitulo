@@ -1,0 +1,95 @@
+<div class="noticias">
+    <h2>Visita nuestro Centro Médico ubicado en Viña del Mar</h2>
+    <p class="titulo">Informacion para el paciente, ingrese al siguiente enlace.</p>
+    <button [routerLink]="['informacion']" class="btn">Leer más <i class="fas fa-angle-double-right"></i></button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="new-cards">
+    <div>
+        <img src="" alt="">
+        <h3>Reservar hora</h3>
+        <a href="https://centromedicodecentromedicocubano.agendapro.com/cl/workflow?local=43277" class="reserva">Ingresa aquí <i class="fas fa-angle-double-right"></i></a>
+    </div>
+</div>
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="seccion">
+                    <ul>
+                        <li *ngFor="let noticia of ListaNoticias" style="float:left;">
+                            <div style="width:18rem;">
+                                <img src="../../../assets/{{noticia.imag}}" alt="{{noticia.imag}}">
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <h2>{{noticia.titulo}}</h2>
+                                <p>{{noticia.contenido}}</p>
+                                <p>{{noticia.frase}}</p>
+                                <button [routerLink]="['noticias',noticia.id]" class="btn">Leer más <i class="fas fa-angle-double-right"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<section class="contacto ">
+    <h3>Comunicate con nosotros</h3>
+    <br>
+    <div class="cont ">
+        <ul>
+            <li>
+                <h4>Numero Telefono</h4>
+                <p>Telefono</p>
+                <a href="tel:+56-32-271-0399">(32) 271 0399</a>
+                <br>
+                <br>
+                <p>Celular</p>
+                <a href="tel:+56-9-4843-0870">9 4843 0870</a>
+            </li>
+            <li>
+                <h4>Ubicacion</h4>
+                <p>Marina Centro Oficina en 2 piso</p>
+                <p>Arlegui 333, Viña del Mar</p>
+                <br>
+                <a id="ubi" href="https://www.google.com/maps/place/Centro+Medico+Cubano/@-33.0230799,-71.5621701,17z/data=!4m9!1m2!2m1!1scentro+medico+cubano+vi%C3%B1a+del+mar!3m5!1s0x9689ddf412667c07:0xced10fdc41672087!8m2!3d-33.0230799!4d-71.5577927!15sCiJjZW50cm8gbWVkaWNvIGN1YmFubyB2acOxYSBkZWwgbWFykgEObWVkaWNhbF9jZW50ZXI?hl=es-419 ">Acceso directo</a>
+            </li>
+            <li>
+                <h4>Correo Electrónico</h4>
+                <a href=" "></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<br>
